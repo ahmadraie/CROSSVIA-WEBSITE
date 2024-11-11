@@ -574,6 +574,8 @@ padding-right: 50px;
 
   #about-us-intro{
     padding-left: 2%;
+    padding-right: 2px;
+
     
     }
     #about-us-intro h2 {
@@ -607,7 +609,8 @@ padding-right: 50px;
 
     bottom: 0px;
     width: 200px; /* Adjust size as needed */
-    right: 50px ;
+    right: 0 ;
+    left: 200px;
     
   }
 }
