@@ -823,7 +823,7 @@ font-size: 1.5rem;
 /* ********************************************
 Expertise page
 ***********************************************/
-#snowboarding-player {
+/* #snowboarding-player {
   position: fixed;
   width: 500px;
   height: 500px;
@@ -844,6 +844,54 @@ Expertise page
     height: 250px;
   }
   
+} */
+
+#expertise-page .col-6 p {
+font-size: 1.5rem;
+color: #fff;
+justify-content: center;
+text-align: justify;
+}
+
+#sports-expertise-section h2 {
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
+  text-align: center;
+}
+
+#sports-expertise-section img {
+height: auto;
+width: 500px ;
+align-items: center;
+}
+#sports-expertise-section h3 {
+
+  font-size: 3rem;
+  color: #32879f;
+  text-shadow: -2px 0px 11px #151515;
+}
+#sports-expertise-section p {
+font-size: 1.5rem;
+color: #fff;
+justify-content: center;
+text-align: justify;
+}
+
+ 
+
+#sports-expertise-section .learn-more {
+   background-color: #32879f;
+  color: #fff;
+  position:absolute;
+  border: none;
+  font-size: 2rem;
+}
+
+#sports-expertise-section .learn-more:hover {
+  background-color: #fff;
+ color: #32879f;
+ 
 }
 
 
