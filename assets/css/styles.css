@@ -846,7 +846,7 @@ Expertise page
   
 } */
 
-#expertise-page .col-6 p {
+#expertise-page .col-md-6 p {
 font-size: 1.5rem;
 color: #fff;
 justify-content: center;
@@ -860,11 +860,7 @@ text-align: justify;
   text-align: center;
 }
 
-#sports-expertise-section img {
-height: auto;
-width: 500px ;
-align-items: center;
-}
+
 #sports-expertise-section h3 {
 
   font-size: 3rem;
