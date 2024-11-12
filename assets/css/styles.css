@@ -696,12 +696,7 @@ padding-right: 50px;
   color: #fff;
 }
 
-#strategic-goal .odd {
-  /* box-sizing: border-box; */
 
-/* background-color: #32879f; */
-/* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702); */
-}
 
 #strategic-goal .odd h3{
   text-shadow: -2px 0px 5px #151515;
@@ -713,13 +708,7 @@ padding-right: 50px;
     color: #fff;
     }
 
-#strategic-goal .even {
 
-  /* background-color: #fff; */
-  /* box-sizing: border-box; */
-
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702); */
-}
 
 #strategic-goal .even h3{
   text-shadow: -2px 0px 5px #151515;
@@ -889,6 +878,58 @@ text-align: justify;
  color: #32879f;
  
 }
+
+/* *********************************************************
+Sport Consulting page 
+************************************************************/
+
+
+#sports-page .col-md-12 p {
+  font-size: 1.5rem;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  }
+
+  #sports-page h2{
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
+  text-align: center;
+  }
+
+  #sports-item h3 {
+    font-size: 3rem;
+    color: #32879f;
+    text-shadow: -2px 0px 11px #151515;
+  }
+
+  #sports-item p {
+    font-size: 1.2rem;
+    color: #fff;
+    justify-content: center;
+    text-align: justify;
+
+    padding-left: 20px;
+
+  }
+
+
+#sports-item span {
+  font-size: 1.2rem;
+  color: #3A8F98;
+  justify-content: center;
+  text-align: justify;
+
+
+}
+
+ 
+  
+
+   
+
+
 
 
 
