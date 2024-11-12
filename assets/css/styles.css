@@ -834,12 +834,16 @@ Expertise page
   }
   
 } */
-
+#expertise-page .col-md-6{
+  border-top: 30px #fff solid;
+  background-color: #32879f;
+}
 #expertise-page .col-md-6 p {
 font-size: 1.5rem;
 color: #fff;
 justify-content: center;
 text-align: justify;
+
 }
 
 #sports-expertise-section h2 {
