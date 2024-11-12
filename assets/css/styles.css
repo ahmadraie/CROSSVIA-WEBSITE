@@ -685,7 +685,7 @@ padding-right: 50px;
 }
 
 #strategic-goal h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #32879f;
   font-weight: bold;
 
@@ -910,7 +910,7 @@ Sport Consulting page
 
   #sports-item p {
     font-size: 1.2rem;
-    color: #fff;
+    color: #333;
     justify-content: center;
     text-align: justify;
 
