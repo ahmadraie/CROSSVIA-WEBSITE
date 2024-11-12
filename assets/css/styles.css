@@ -909,7 +909,7 @@ Sport Consulting page
   }
 
   #sports-item p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
     justify-content: center;
     text-align: justify;
@@ -920,13 +920,20 @@ Sport Consulting page
 
 
 #sports-item span {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #3A8F98;
   justify-content: center;
   text-align: justify;
   font-weight: bold;
-
-
+}
+#sports-item .padding {
+  font-size: 1.2rem;
+  color: #333;
+  justify-content: center;
+  text-align: justify;
+  padding-left: 42px;
+  font-weight: 200;
+  
 }
 
 #terms-page h2 {
