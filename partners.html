@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PARTNERS | Crossvia</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+     <!-- Bootstrap 5.3.0 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Swiper.js -->
+     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
@@ -25,6 +25,60 @@
 
     <link href="assets/css/styles.css" rel="stylesheet" />
     <!-- Link to your external CSS file -->
+    <style>
+      .swiper-container {
+          width: 100%;
+          max-width: 1200px;
+          height: 500px;
+          margin: auto;
+      }
+      .swiper-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          background: #fff;
+          border-radius: 15px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          padding: 20px;
+          height: auto;
+      }
+      .swiper-slide img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 15px;
+          border-radius: 50%;
+          object-fit: cover;
+      }
+      .swiper-slide h5 {
+          margin-bottom: 10px;
+      }
+      .swiper-slide p {
+          font-size: 1.2rem !important;
+          color: #333;
+      }
+      #sports-item .partners-description {
+        font-size: 1.5rem;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+      }
+      #sports-item h2 {
+        font-size: 4rem;
+        color: #f1f1f1;
+      }
+      .swiper-pagination-bullet-active  {
+       background-color: #32879f;
+      }
+      .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        color: #32879f;
+      }
+      .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        color: #32879f;
+
+      }
+  </style>
   </head>
 
   <body
@@ -110,13 +164,79 @@
       <div class="content-wrapper">
         <section id="page-title-section" class="container-fluid py-5 content-section "
         style="background-image: url('assets/image/1.png');" data-aos="fade-up">
-       <div class="container py-5"></div>
+       <div class="container py-5">
        <div class="page-title">
           <h1>PARTNERS</h1>
         </div>
-      
+      </div>
       
         </section>
+
+        <section id="sports-item" class="container-fluid py-5 content-section"
+        style="background-image: url('assets/image/17.png'); background-size: cover; background-position: center;" data-aos="fade-up">
+    <div class="container py-5">
+        <h2 class="text-center text-white mb-4">Our Partners</h2>
+        <p class="partners-description">At CROSSVIA, we seek partnerships with distinguished organizations that share our dedication to excellence in the sports industry. Our potential partners include industry leaders, innovators, and key players across various sectors, each bringing unique expertise and perspectives to enhance our offerings. By combining our collective strengths, we deliver tailored solutions that drive success, enhance performance, and unlock new opportunities in the ever-evolving sports landscape. Explore our strategic partnerships and discover how our combined expertise can help you achieve your goals and create a lasting impact on the sports industry.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/100" alt="Partner 1">
+                    <h5>IMG</h5>
+                    <p>IMG Consulting is a division of IMG, a global leader in sports, events, media, and fashion. They offer a wide range of services designed to enhance the performance and marketability of sports entities. IMG Consulting provides strategic planning, sponsorship acquisition, brand development, Hospitality, event management, and media rights consulting.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/100" alt="Partner 2">
+                    <h5>Premier Sport Psychology</h5>
+                    <p>a leading provider of sports psychology services based in Minnesota, USA. The company offers a wide range of mental performance services to athletes, coaches, and organizations. Their offerings include mental skills training, performance enhancement techniques, leadership development, team dynamics, and career transition support. They work with individuals and teams.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/100" alt="Partner 3">
+                    <h5>Octagon</h5>
+                    <p>Octagon is a leading global sports and entertainment marketing agency. They offer consulting services to help clients maximize their impact in the sports industry. Octagon provides sponsorship and marketing consulting, athlete and talent management, event management, and digital and social media strategy.</p>
+                </div>
+                 <!-- Card 4 -->
+                 <div class="swiper-slide">
+                  <img src="https://via.placeholder.com/100" alt="Partner 4">
+                  <h5>Optimum Nutrition</h5>
+                  <p>The company is involved in various regional fitness initiatives and events such as the Dubai Fitness Challenge and Dubai Active Show. Optimum Nutrition aims to raise awareness about nutrition, health, and sports, providing expert advice to athletes and fitness enthusiasts.</p>
+              </div>
+              <!-- Card 5 -->
+              <div class="swiper-slide">
+                  <img src="https://via.placeholder.com/100" alt="Partner 5">
+                  <h5>Gatorade Sports Science Institute</h5>
+                  <p>GSSI conducts cutting-edge research on sports nutrition and offers consulting services based on its findings. Its services focus on hydration, energy intake, and recovery strategies for athletes. GSSI also provides individual consultations, team workshops, and educational resources on sports nutrition. In addition, its line of service also includes training and workshops in sports science.</p>
+              </div>
+              <!-- Card 6 -->
+              <div class="swiper-slide">
+                  <img src="https://via.placeholder.com/100" alt="Partner 6">
+                  <h5>Wasserman </h5>
+                  <p>Wasserman is a global sports marketing and talent management company that represents athletes, coaches, and broadcasters across various sports. It offers Athlete management, marketing and endorsement deals, social media strategy, financial planning, brand building, and event management.</p>
+              </div>
+                <!-- Card 7 -->
+                <div class="swiper-slide">
+                  <img src="https://via.placeholder.com/100" alt="Partner 7">
+                  <h5>Catapult Sports</h5>
+                  <p>We are a global company that works with top leagues, teams, and organizations to help them unleash their potential. A company that provides advanced wearable technology (GPS tracking vest) for tracking athlete movements and physiological data. It is basically a cloud-based platform for managing and analyzing team performance data.</p>
+              </div>
+              <!-- Card 8 -->
+              <div class="swiper-slide">
+                  <img src="https://via.placeholder.com/100" alt="Partner 8">
+                  <h5>Infront Sports & Media</h5>
+                  <p>is a major player in sports marketing and media rights management. It manages media rights, sponsorships, and event production for various sports. It has worked with international sports federations, leagues, and major brands</p>
+              </div>
+                <!-- Repeat for all 8 cards -->
+            </div>
+            <!-- Pagination and Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
         <!-- Additional sections... -->
       <!-- Footer -->
       <footer class="footer">
@@ -179,9 +299,33 @@
 </div>
 
     <!-- Bootstrap and AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Link to your external JS file -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: '1',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
   </body>
 </html>
