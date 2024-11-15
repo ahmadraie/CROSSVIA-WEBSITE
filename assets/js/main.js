@@ -41,3 +41,10 @@ window.addEventListener('scroll', () => {
   // Set the position and flip the player image when on the right side
   player.style.transform = `translateX(${position}) ${isRightSide ? 'scaleX(1)' : 'scaleX(-1)'}`;
 });
+
+// Optional: Disable Bootstrap's toggle functionality on hover-only dropdowns
+document.querySelector('#expertiseDropdown').addEventListener('click', function (e) {
+  if (window.innerWidth >= 992) { // Desktop-only
+      window.location.href = '/expertise';
+  }
+});

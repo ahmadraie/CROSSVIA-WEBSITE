@@ -64,6 +64,25 @@ h2 {
   margin: 10px;
 }
 
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Adjust the transition for smooth hover effect */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e9ecef; /* Optional hover color for items */
+}
+
 .content-wrapper {
   margin-left: 250px;
   transition: margin-left 0.3s ease;

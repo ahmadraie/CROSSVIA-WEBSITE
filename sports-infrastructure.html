@@ -33,8 +33,7 @@
     data-bs-offset="50"
     tabindex="0"
   >
-    <!-- Sidebar -->
-    <div class="sidebar">
+        <div class="sidebar">
       <div class="logo"><a href="./index">
         <img
           src="assets/image/Crosslogo.png"
@@ -62,9 +61,21 @@
             <li class="nav-item">
               <a class="nav-link" href="./about-us">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./solutions">Solutions</a>
-            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./solutions" id="expertiseDropdown" role="button">
+                  Solutions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="expertiseDropdown">
+                  <li><a class="dropdown-item" href="./sports-consulting">Consulting</a></li>
+                  <li><a class="dropdown-item" href="./sports-investment">Investment</a></li>
+                  <li><a class="dropdown-item" href="./sports-events">Events</a></li>
+                  <li><a class="dropdown-item" href="./sports-marketing">Marketing</a></li>
+                  <li><a class="dropdown-item" href="./sports-technology-and-inovation">Technology</a></li>
+                  <li><a class="dropdown-item" href="./sports-infrastructure">Infrastructure</a></li>
+                  <li><a class="dropdown-item" href="./sports-performance-analysis">Performance Analysis</a></li>
+                  <li><a class="dropdown-item" href="./talent-development-and-training">Talent Development</a></li>
+              </ul>
+          </li>
             <li class="nav-item">
               <a class="nav-link" href="./investors">Investors</a>
             </li>
