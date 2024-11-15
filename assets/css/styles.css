@@ -417,11 +417,10 @@ padding-left: 100px;
   text-shadow: 3px 10px 14px #151515}
 
 .expertise-list .col-md-3:hover h3 {
-  color: #fff;
+  color: #32879f;
   text-shadow: none;
   transition: text-shadow 0.3 ease;
   margin-top: 0;
-  background-color: #32879f;
 }
 
 .expertise-list .col-md-3 p {

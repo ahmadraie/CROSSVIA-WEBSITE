@@ -72,12 +72,22 @@
        background-color: #32879f;
       }
       .swiper-button-next, .swiper-rtl .swiper-button-prev {
-        color: #32879f;
+        color: #fff;
+        font-weight: bold;
       }
       .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-        color: #32879f;
-
+        color: #fff;
+    font-weight: bold;
+      top: 32vh ;
+        left: 12vw;
+        position: absolute;
       }
+      .swiper-button-next, .swiper-rtl .swiper-button-prev {
+
+        top: 60vh;
+        right: 13vw;
+      }
+      
   </style>
   </head>
 
@@ -309,7 +319,7 @@
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
-            slidesPerView: '1',
+            slidesPerView: '2',
             coverflowEffect: {
                 rotate: 50,
                 stretch: 0,
