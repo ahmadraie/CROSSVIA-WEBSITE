@@ -961,16 +961,20 @@ investors page
 **********************************************************/
    
 
+#sports-invest-section h3 {
 
+  font-size: 3rem;
+  color: #32879f;
 
-  #investors-page h2{
-  font-size: 4rem;
-  color: #f1f1f1;
- 
-  text-align: center;
-  }
+}
+#sports-invest-section p {
+font-size: 1.5rem;
+color: #fff;
+justify-content: center;
+text-align: justify;
+}
 
+#sports-invest-section .col-md-12 {
 
-
-
-
+  margin-top: 25vh;
+}
