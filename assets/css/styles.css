@@ -113,6 +113,29 @@ preloader
   height: 200px;
 }
 
+
+
+
+#break-section h3 {
+
+  font-size: 3rem;
+  color: #32879f;
+
+}
+
+#break-section p {
+  font-size: 3rem;
+  color: #fff;
+  justify-content: center;
+  text-align: left;
+  width: 500px;
+  }
+  #break-section .col-md-12 {
+
+    margin-top: 25vh;
+  }
+
+
 /* ****************************************************************/
 /* homepage */
 /* ****************************************************************/
