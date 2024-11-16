@@ -114,7 +114,9 @@ preloader
 }
 
 
-
+/* ***********************************************************
+break section
+*****************************************************************/
 
 #break-section h3 {
 
@@ -128,12 +130,29 @@ preloader
   color: #fff;
   justify-content: center;
   text-align: left;
-  width: 500px;
+  width: 25vw;
+  text-shadow: 3px 10px 14px #151515;
   }
   #break-section .col-md-12 {
 
     margin-top: 25vh;
+
   }
+
+  #break-section p span {
+    
+    color: #32879f;
+   
+    }
+
+    @media (max-width:768px) {
+
+      #break-section p {
+
+        max-width: 360px;
+      }
+      
+    }
 
 
 /* ****************************************************************/
@@ -434,10 +453,13 @@ padding-left: 100px;
 .expertise-list .col-md-3 h3 {
   color: #fff;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   /* margin-bottom: 10px; */
   margin-top: 150px;
-  text-shadow: 3px 10px 14px #151515}
+  text-shadow: 3px 10px 14px #151515;
+}
+
+
 
 .expertise-list .col-md-3:hover h3 {
   color: #32879f;
@@ -518,6 +540,15 @@ padding-left: 100px;
   font-size: 1.5rem;
   color: #fff;
  
+}
+
+@media (max-width:768px) {
+  #career p {
+
+    text-shadow: 3px 10px 14px #151515;
+   
+  }
+  
 }
 
 .apply-button {
