@@ -64,6 +64,96 @@
   transform: scale(1.1);
   color: #fff;
 }
+
+ /* Swiper Container Styling */
+ .investment-swiper-container {
+      width: 100%;
+      height: 80vh; /* Full screen height */
+      position: relative;
+    }
+
+    #investment-slider .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      height: 100%; /* Ensure full height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+     /* Overlay Styling */
+     #investment-slider .swiper-slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+      z-index: 1;
+    }
+
+    /* Text Styling */
+    #investment-slider .container h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      text-align: justify;
+    }
+
+    #investment-slider .container p {
+      font-size: 1.25rem;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      padding: 0 15px;
+      text-align: justify;
+
+    }
+    #investment-slider .container  {
+    position: relative; /* To position content above overlay */
+    z-index: 2;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #investment-slider  .container h2 {
+        font-size: 2rem;
+      }
+
+      #investment-slider  .container p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #investment-slider .container h2 {
+        font-size: 1.5rem;
+      }
+
+      #investment-slider .container p {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Navigation and Pagination Styling */
+    #investment-slider .swiper-button-next,
+    #investment-slider .swiper-button-prev {
+      color: #fff;
+    }
+
+    #investment-slider .swiper-pagination-bullet {
+      background-color: #32879f;
+      opacity: 0.7;
+    }
+
+    #investment-slider .swiper-pagination-bullet-active {
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+    }
+
       </style>
   </head>
 
@@ -412,6 +502,39 @@
         </div>
       </section>
 
+<!-- Investment Slider Section -->
+<section id="investment-slider">
+  <div class="investment-swiper-container swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide" style="background-image: url('assets/image/slide1.png')">
+        <div class="container">
+          <h2>Maximize Returns with Smart Investments in the Sports Sector.</h2>
+          <p>Unique investment opportunities in the sports sector, focusing on high-growth potential and cutting-edge technologies that drive long-term success and industry leadership.</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide" style="background-image: url('assets/image/slide2.png')">
+        <div class="container">
+          <h2> Capitalize on the Booming E-Sports Industry.</h2>
+          <p>Ensure significant returns in one of the most dynamic sectors by investing in the E-sports industry's rapid growth, innovative technologies, and expanding global fan base.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide" style="background-image: url('assets/image/slide3.png')">
+        <div class="container">
+          <h2>Harnessing Opportunities in Today's Market Trends.</h2>
+          <p>Identify and allocate assets to high-potential opportunities in the sports industry by leveraging market trends to optimize investments.</p>
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Pagination and Navigation -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+</section>
 
       <!-- latest news -->
       <section
@@ -427,55 +550,56 @@
           <div class="swiper-wrapper">
             <!-- Card 1 -->
             <div class="swiper-slide card">
-              <img src="image1.jpg" class="card-img-top" alt="News 1">
+              <img src="assets/image/news06.png" class="card-img-top" alt="News 1">
               <div class="card-body">
-                <h5 class="card-title">News Title 1</h5>
-                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <h5 class="card-title">Saudi 2034 plans include stadium 350m above ground.</h5>
+                <p class="card-text">Saudi Arabia has submitted plans to build 11 stadiums with high technology and innovation as part of the country’s bid to host the 2034 world cup.</p>
+               
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
             <!-- Repeat for other cards -->
             <div class="swiper-slide card">
-              <img src="image2.jpg" class="card-img-top" alt="News 2">
+              <img src="assets/image/news02.png" class="card-img-top" alt="News 2">
               <div class="card-body">
-                <h5 class="card-title">News Title 2</h5>
-                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <h5 class="card-title">A new E-sports tournament in Saudi Arabia promises to be a game-changer – but it’s also caused division in the industry.</h5>
+                <p class="card-text">Saudi Arabia hosts the first-ever E-sports World Cup in 2024, aiming to make the country a global hub for gaming and digital entertainment.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
                <!-- Repeat for other cards -->
                <div class="swiper-slide card">
-                <img src="image2.jpg" class="card-img-top" alt="News 2">
+                <img src="assets/image/news03.png" class="card-img-top" alt="News 2">
                 <div class="card-body">
-                  <h5 class="card-title">News Title 2</h5>
-                  <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                  <h5 class="card-title">AI and tech innovations at Paris 2024: A game changer in sports.</h5>
+                  <p class="card-text">How AI and technological innovations will enhance the Paris 2024 Olympics, transforming the athlete experience, event organization, and fan engagement.</p>
                   <a href="#" class="btn btn-primary">Read More</a>
                 </div>
               </div>
                  <!-- Repeat for other cards -->
             <div class="swiper-slide card">
-              <img src="image2.jpg" class="card-img-top" alt="News 2">
+              <img src="assets/image/news04.png" class="card-img-top" alt="News 2">
               <div class="card-body">
-                <h5 class="card-title">News Title 2</h5>
-                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <h5 class="card-title">: Tech innovations, AI changing the game for modern sports, training methodologies.</h5>
+                <p class="card-text">how AI and tech innovations are transforming sports training by enhancing performance analysis, injury prevention, and personalized coaching.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
                <!-- Repeat for other cards -->
                <div class="swiper-slide card">
-                <img src="image2.jpg" class="card-img-top" alt="News 2">
+                <img src="assets/image/news05.png" class="card-img-top" alt="News 2">
                 <div class="card-body">
-                  <h5 class="card-title">News Title 2</h5>
-                  <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                  <h5 class="card-title">From Wimbledon to VAR, is tech hurting the drama of sport?</h5>
+                  <p class="card-text">Advancements in technology may be diminishing the emotional and dramatic appeal of sports by focusing on accuracy rather than the spontaneous unpredictability that fuels their excitement. </p>
                   <a href="#" class="btn btn-primary">Read More</a>
                 </div>
               </div>
                  <!-- Repeat for other cards -->
             <div class="swiper-slide card">
-              <img src="image2.jpg" class="card-img-top" alt="News 2">
+              <img src="assets/image/news01.png" class="card-img-top" alt="News 2">
               <div class="card-body">
-                <h5 class="card-title">News Title 2</h5>
-                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <h5 class="card-title">Saudi Arabia to develop $3.3bn sports complex with UK tech partnership</h5>
+                <p class="card-text">The $3.3bn sports complex will be a major tech-driven hub in the MENA region, attracting investment in sports and entertainment.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
@@ -656,7 +780,24 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Link to your external JS file -->
-
+    <script>
+      var investmentSwiper = new Swiper('.investment-swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 5000, // Change slide every 5 seconds
+          disableOnInteraction: false, // Keeps autoplay running even after interaction
+        },
+        effect: 'fade', // Smooth fade effect
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true, // Allow clicks on pagination bullets
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         new Swiper(".mySwiper", {
@@ -693,5 +834,7 @@
         });
       });
       </script>
+
+
   </body>
 </html>
