@@ -130,18 +130,22 @@ break section
   color: #fff;
   justify-content: center;
   text-align: left;
-  width: 25vw;
   text-shadow: 3px 10px 14px #151515;
+  margin-top: 40vh;
+
   }
   #break-section .col-md-12 {
-
-    margin-top: 25vh;
-
+background-color: #32879f;
+    margin-top: 0;
+  max-width: 30vw;
+    height: 100vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.702);
   }
 
   #break-section p span {
     
-    color: #32879f;
+    color: #a6a6a6;
+    font-weight: bold;
    
     }
 
@@ -149,7 +153,10 @@ break section
 
       #break-section p {
 
-        max-width: 360px;
+        max-width: fit-content;
+      }
+      #break-section .col-md-12 {
+        max-width:fit-content ;
       }
       
     }
