@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME | Crossvia</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Swiper.js CSS -->
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
@@ -25,6 +25,46 @@
 
     <link href="assets/css/styles.css" rel="stylesheet" />
     <!-- Link to your external CSS file -->
+
+
+    <style>
+      #news-carousel .swiper {
+        width: 100%;
+        height: auto;
+      }
+      #news-carousel .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #news-carousel .card {
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      #news-carousel .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      #news-carousel  h2 {
+        font-size: 4rem;
+        color: #f1f1f1;
+      }
+      #news-carousel .btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+#news-carousel .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  color: #fff;
+}
+      </style>
   </head>
 
   <body
@@ -373,34 +413,76 @@
       </section>
 
       <section
-      id="career"
+      id="news-carousel"
       class="container-fluid py-5 d-flex content-section"
       style="background-image: url('assets/image/18.png')"
       data-aos="fade-up"
     >
-      <div class="container py-5">
+      <div class="container py-5 ">
         <h2 class="text-center mb-5">Latest News</h2>
-        <p class="career-description">
-          Empower Your Passion, Transform the Game!
-        </p>
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <!-- <p>
-              At CROSSVIA, we value talent, creativity, and innovation to
-              drive the future of sports. We seek passionate individuals ready
-              to make an impact with transformative solutions. Join a dynamic
-              environment where you can grow, thrive, and contribute to the
-              global sports community while advancing your skills. Explore our
-              opportunities and elevate your career with CROSSVIA.
-            </p> -->
 
-            <!-- <button
-              class="apply-button"
-              style="background-image: url('assets/image/apply.png')"
-            >
-              Apply
-            </button> -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide card">
+              <img src="image1.jpg" class="card-img-top" alt="News 1">
+              <div class="card-body">
+                <h5 class="card-title">News Title 1</h5>
+                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <!-- Repeat for other cards -->
+            <div class="swiper-slide card">
+              <img src="image2.jpg" class="card-img-top" alt="News 2">
+              <div class="card-body">
+                <h5 class="card-title">News Title 2</h5>
+                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+               <!-- Repeat for other cards -->
+               <div class="swiper-slide card">
+                <img src="image2.jpg" class="card-img-top" alt="News 2">
+                <div class="card-body">
+                  <h5 class="card-title">News Title 2</h5>
+                  <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+                 <!-- Repeat for other cards -->
+            <div class="swiper-slide card">
+              <img src="image2.jpg" class="card-img-top" alt="News 2">
+              <div class="card-body">
+                <h5 class="card-title">News Title 2</h5>
+                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+               <!-- Repeat for other cards -->
+               <div class="swiper-slide card">
+                <img src="image2.jpg" class="card-img-top" alt="News 2">
+                <div class="card-body">
+                  <h5 class="card-title">News Title 2</h5>
+                  <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+                 <!-- Repeat for other cards -->
+            <div class="swiper-slide card">
+              <img src="image2.jpg" class="card-img-top" alt="News 2">
+              <div class="card-body">
+                <h5 class="card-title">News Title 2</h5>
+                <p class="card-text">Short description of the news goes here. Keep it concise and engaging.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <!-- Add more cards as needed -->
           </div>
+          <!-- Pagination and navigation -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
@@ -565,10 +647,49 @@
       <img src="assets/image/loading.gif" alt="Loading" class="preloader-gif" />
     </div>
 
-    <!-- Bootstrap and AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper.js JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Link to your external JS file -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+            loop: true, // Enable infinite loop
+            autoplay: {
+              delay: 3000, // 3 seconds
+              disableOnInteraction: false, // Continue autoplay even after user interaction
+             },
+            
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            768: { slidesPerView: 1 },
+            992: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+          },
+        });
+      });
+      </script>
   </body>
 </html>

@@ -129,10 +129,7 @@ break section
   font-size: 3rem;
   color: #32879f;
 }
-#break-video-section{
 
-
-}
 .content-break-video-section .col-md-6 p{
 
   font-size: 1.5rem;
@@ -534,6 +531,9 @@ text-align: left;
   animation: float-alt 6s ease-in-out infinite;
   z-index: 1;
 }
+
+
+
 
 #career {
   text-align: center;
