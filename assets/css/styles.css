@@ -119,10 +119,33 @@ break section
   background-size: cover;
   background-position: center;
 }
+.content-break-video-section {
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
 
+}
 #break-section h3 {
   font-size: 3rem;
   color: #32879f;
+}
+#break-video-section{
+
+
+}
+.content-break-video-section .col-md-6 p{
+
+  font-size: 1.5rem;
+  color: #fff;
+  justify-content: left;
+  text-align: left;
+  text-shadow: 3px 10px 14px #151515;
+}
+.content-break-video-section h2 {
+text-shadow: 3px 10px 14px #151515;
+font-size: 3rem;
+justify-content: left;
+text-align: left;
 }
 
 #break-section p {
@@ -133,14 +156,17 @@ break section
   text-shadow: 3px 10px 14px #151515;
 }
 #break-section .col-md-4 {
-  background-color: #32879f;
   margin-top: 0;
 
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.702);
+}
+
+#break-video-section .col-md-6 {
+  margin-top: 0;
+
 }
 
 #break-section p span {
-  color: #a6a6a6;
+  color: #32879f;
   font-weight: bold;
 }
 
@@ -206,10 +232,10 @@ break section
 /* Positioning the floating player image */
 .floating-player {
   position: fixed;
-  bottom: 0; /* Distance from bottom of the viewport */
+  bottom: -5; /* Distance from bottom of the viewport */
   right: 100px; /* Distance from right of the viewport */
-  width: 1000px; /* Adjust the size of the image */
-  height: 1000px;
+  width: 850px; /* Adjust the size of the image */
+  height: 850px;
   z-index: 999; /* Ensure it's above other content */
   animation: floatAnimation 3s ease-in-out infinite; /* Add animation */
 }
@@ -253,6 +279,7 @@ break section
   border-top: 30px solid #fff;
   text-align: justify;
   padding: 10px 20px;
+  margin-top: 9vh;
 }
 
 #about-us p {
