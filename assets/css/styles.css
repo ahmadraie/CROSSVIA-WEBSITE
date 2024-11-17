@@ -1,9 +1,6 @@
-
-
 /* ************************* */
 /* Global */
 /* ****************************************************************/
-
 
 /* Custom styles */
 body {
@@ -99,8 +96,8 @@ preloader
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('assets/image/preloader-background.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/image/preloader-background.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -113,16 +110,19 @@ preloader
   height: 200px;
 }
 
-
 /* ***********************************************************
 break section
 *****************************************************************/
 
-#break-section h3 {
+.content-break-section {
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
 
+#break-section h3 {
   font-size: 3rem;
   color: #32879f;
-
 }
 
 #break-section p {
@@ -131,36 +131,27 @@ break section
   justify-content: center;
   text-align: left;
   text-shadow: 3px 10px 14px #151515;
-  margin-top: 40vh;
+}
+#break-section .col-md-4 {
+  background-color: #32879f;
+  margin-top: 0;
 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.702);
+}
+
+#break-section p span {
+  color: #a6a6a6;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #break-section p {
+    max-width: fit-content;
   }
   #break-section .col-md-12 {
-background-color: #32879f;
-    margin-top: 0;
-  max-width: 30vw;
-    height: 100vh;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.702);
+    max-width: fit-content;
   }
-
-  #break-section p span {
-    
-    color: #a6a6a6;
-    font-weight: bold;
-   
-    }
-
-    @media (max-width:768px) {
-
-      #break-section p {
-
-        max-width: fit-content;
-      }
-      #break-section .col-md-12 {
-        max-width:fit-content ;
-      }
-      
-    }
-
+}
 
 /* ****************************************************************/
 /* homepage */
@@ -324,17 +315,13 @@ background-color: #32879f;
 }
 
 .footer .quick-link {
-
-padding-left: 100px;
+  padding-left: 100px;
 }
 
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   .footer .quick-link {
-
     padding-left: 8px;
-    }
-  
+  }
 }
 
 .footer ul {
@@ -414,7 +401,6 @@ padding-left: 100px;
 #expertise h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
 }
 #expertise .expertise-description {
   font-size: 2rem;
@@ -465,8 +451,6 @@ padding-left: 100px;
   margin-top: 150px;
   text-shadow: 3px 10px 14px #151515;
 }
-
-
 
 .expertise-list .col-md-3:hover h3 {
   color: #32879f;
@@ -530,7 +514,6 @@ padding-left: 100px;
 #career h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
 }
 #career .career-description {
   font-size: 2.5rem;
@@ -540,22 +523,17 @@ padding-left: 100px;
 #career h2 span {
   font-size: 4rem;
   color: #32879f;
- 
 }
 
 #career p {
   font-size: 1.5rem;
   color: #fff;
- 
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #career p {
-
     text-shadow: 3px 10px 14px #151515;
-   
   }
-  
 }
 
 .apply-button {
@@ -565,7 +543,7 @@ padding-left: 100px;
   padding: 15px 30px;
   font-size: 32px;
   font-weight: bold;
- 
+
   color: #333;
   border-radius: 8px;
   cursor: pointer;
@@ -597,7 +575,6 @@ padding-left: 100px;
 /* Page Title */
 /* ****************************************************************/
 
-
 .page-title-section {
   position: relative;
   text-align: center;
@@ -608,22 +585,21 @@ padding-left: 100px;
 
 .page-title h1 {
   font-size: 5rem;
-position: relative;
+  position: relative;
   text-align: left;
   justify-content: center;
   color: #fff;
- 
+
   padding-left: 50px;
   top: 25vh;
 }
 
-@media (max-width:768px) {
-
-.page-title h1 {
-  left: 0px;
-  text-align: center;
-  font-size: 3rem;
-}
+@media (max-width: 768px) {
+  .page-title h1 {
+    left: 0px;
+    text-align: center;
+    font-size: 3rem;
+  }
 }
 
 /* ***********************************************************
@@ -641,31 +617,25 @@ ABOUT US PAGE
   padding: 10px 20px;
 }
 
-#about-us-intro{
-padding-left: 55%;
-padding-right: 50px;
-
+#about-us-intro {
+  padding-left: 55%;
+  padding-right: 50px;
 }
 
 #about-us-intro h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
 }
 
-@media (max-width:768px) {
-
-  #about-us-intro{
+@media (max-width: 768px) {
+  #about-us-intro {
     padding-left: 2%;
     padding-right: 2px;
-
-    
-    }
-    #about-us-intro h2 {
-      text-align: center;
-    }
+  }
+  #about-us-intro h2 {
+    text-align: center;
+  }
 }
-
 
 .drift-car {
   position: absolute;
@@ -678,7 +648,8 @@ padding-right: 50px;
 
 /* Custom Floating Animation */
 @keyframes driftFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(-5deg);
   }
   50% {
@@ -686,84 +657,66 @@ padding-right: 50px;
   }
 }
 
-
-@media (max-width:768px) {
-   .drift-car {
-
+@media (max-width: 768px) {
+  .drift-car {
     bottom: 0px;
     width: 200px; /* Adjust size as needed */
-    right: 0 ;
+    right: 0;
     left: 200px;
-    
   }
 }
 
 @media (max-width: 360px) {
   .drift-car {
-
     bottom: 2px;
     width: 150px; /* Adjust size as needed */
-    right: 50px ;
-    
+    right: 50px;
   }
-  
 }
 
-
 #strategic-direction {
-
   padding-right: 50%;
   padding-left: 100px;
-
 }
 
 #strategic-direction h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
+
   text-align: center;
 }
 
 #strategic-direction h3 {
   font-size: 3rem;
   color: #32879f;
- 
 }
 
 #strategic-direction p {
   font-size: 1.5rem;
   color: #fff;
- 
-
 }
 
 @media (max-width: 768px) {
-
   #strategic-direction {
-
     padding-right: 0;
     padding-left: 0;
-  
   }
   #strategic-direction h3 {
-  text-align: center;
+    text-align: center;
   }
   #strategic-direction p {
     text-align: center;
-   
   }
 }
 
-
-#strategic-goal{
-
+#strategic-goal {
   padding-left: 40%;
 }
 
 #strategic-goal h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
+
   text-align: center;
 }
 
@@ -771,7 +724,6 @@ padding-right: 50px;
   font-size: 2.5rem;
   color: #32879f;
   font-weight: bold;
-
 }
 
 #strategic-goal p {
@@ -779,42 +731,29 @@ padding-right: 50px;
   color: #fff;
 }
 
-
-
-#strategic-goal .odd h3{
-
+#strategic-goal .odd h3 {
   color: #32879f;
-  }
+}
 
-  #strategic-goal .odd p{
+#strategic-goal .odd p {
+  color: #fff;
+}
 
-    color: #fff;
-    }
-
-
-
-#strategic-goal .even h3{
-
+#strategic-goal .even h3 {
   color: #32879f;
-  }
+}
 
-  #strategic-goal .even p{
-
-    color: #fff;
-    }
-
-
+#strategic-goal .even p {
+  color: #fff;
+}
 
 @media (max-width: 768px) {
-
   #strategic-goal {
-
     padding-left: 2%;
-  
   }
   #strategic-goal h3 {
-  text-align: center;
-  font: 2rem;
+    text-align: center;
+    font: 2rem;
   }
   #strategic-goal p {
     text-align: center;
@@ -826,24 +765,21 @@ padding-right: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 #core-value h2 {
-
   font-size: 4rem;
   color: #f1f1f1;
- 
+
   text-align: center;
 }
 
 #core-value p {
-font-size: 1.5rem;
+  font-size: 1.5rem;
   color: #fff;
   padding: 5px;
 }
 
 #core-value h3 {
- 
   color: #32879f;
   font-weight: bold;
   margin-top: 5px;
@@ -851,15 +787,10 @@ font-size: 1.5rem;
 }
 
 #core-value .col-md-4 {
-  margin-top: 40px;  
- 
+  margin-top: 40px;
 }
 
-
 @media (max-width: 768px) {
-
-
-
 }
 
 .tennis-ball {
@@ -917,94 +848,83 @@ Expertise page
   }
   
 } */
-#expertise-page .col-md-6{
+#expertise-page .col-md-6 {
   border-top: 30px #fff solid;
   background-color: #32879f;
 }
 #expertise-page .col-md-6 p {
-font-size: 1.5rem;
-color: #fff;
-justify-content: center;
-text-align: justify;
-
+  font-size: 1.5rem;
+  color: #fff;
+  justify-content: center;
+  text-align: justify;
 }
 
 #sports-expertise-section h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
+
   text-align: center;
 }
 
-
 #sports-expertise-section h3 {
-
   font-size: 3rem;
   color: #32879f;
-
 }
 #sports-expertise-section p {
-font-size: 1.5rem;
-color: #fff;
-justify-content: center;
-text-align: justify;
+  font-size: 1.5rem;
+  color: #fff;
+  justify-content: center;
+  text-align: justify;
 }
 
- 
-
 #sports-expertise-section .learn-more {
-   background-color: #32879f;
+  background-color: #32879f;
   color: #fff;
-  position:absolute;
+  position: absolute;
   border: none;
   font-size: 2rem;
 }
 
 #sports-expertise-section .learn-more:hover {
   background-color: #fff;
- color: #32879f;
- 
+  color: #32879f;
 }
 
 /* *********************************************************
 Sport Consulting page 
 ************************************************************/
 
-
 #sports-page .col-md-12 p {
   font-size: 1.5rem;
   color: #fff;
   justify-content: center;
   text-align: center;
-  }
+}
 
-  #sports-page h2{
+#sports-page h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
+
   text-align: center;
-  }
+}
 
-  #sports-item h3 {
-    font-size: 3rem;
-    color: #32879f;
-  
-  }
+#sports-item h3 {
+  font-size: 3rem;
+  color: #32879f;
+}
 
-  #sports-item p {
-    font-size: 1.5rem;
-    color: #333;
-    justify-content: center;
-    text-align: justify;
+#sports-item p {
+  font-size: 1.5rem;
+  color: #333;
+  justify-content: center;
+  text-align: justify;
 
-    padding-left: 20px;
-
-  }
-
+  padding-left: 20px;
+}
 
 #sports-item span {
   font-size: 1.5rem;
-  color: #3A8F98;
+  color: #3a8f98;
   justify-content: center;
   text-align: justify;
   font-weight: bold;
@@ -1016,51 +936,41 @@ Sport Consulting page
   text-align: justify;
   padding-left: 42px;
   font-weight: 200;
-  
 }
 
 #terms-page h2 {
   font-size: 4rem;
   color: #f1f1f1;
- 
-
 }
-
 
 #terms-page p {
   font-size: 1.5rem;
   color: #fff;
 }
 
- 
-  
 /* ***************************************************
 investors page
 
 **********************************************************/
-   
 
 #sports-invest-section h3 {
-
   font-size: 3rem;
   color: #32879f;
-
 }
 #sports-invest-section p {
-font-size: 1.5rem;
-color: #fff;
-justify-content: center;
-text-align: justify;
+  font-size: 1.5rem;
+  color: #fff;
+  justify-content: center;
+  text-align: justify;
 }
 
 #sports-invest-section .col-md-12 {
-
   margin-top: 25vh;
 }
 
 #sports-invest-section p span {
   font-size: 1.5rem;
-  color: #3A8F98;
+  color: #3a8f98;
   justify-content: center;
   text-align: justify;
-  }
+}

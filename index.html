@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | Crossvia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Changa font -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME | Crossvia</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Bootstrap Icons CDN -->
-  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Changa font -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <!-- Link to your external CSS file -->
+  </head>
 
-  <link href="assets/css/styles.css" rel="stylesheet"> <!-- Link to your external CSS file -->
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0">
-
-  <!-- Sidebar -->
-      <div class="sidebar">
-      <div class="logo"><a href="./index">
-        <img
-          src="assets/image/Crosslogo.png"
-          alt="Crossvia Logo"
-          class="img-fluid mb-3"
+  <body
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="50"
+    tabindex="0"
+  >
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <a href="./index">
+          <img
+            src="assets/image/Crosslogo.png"
+            alt="Crossvia Logo"
+            class="img-fluid mb-3"
         /></a>
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -47,20 +64,59 @@
               <a class="nav-link" href="./about-us">About Us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./solutions" id="expertiseDropdown" role="button">
-                  Solutions
+              <a
+                class="nav-link dropdown-toggle"
+                href="./solutions"
+                id="expertiseDropdown"
+                role="button"
+              >
+                Solutions
               </a>
               <ul class="dropdown-menu" aria-labelledby="expertiseDropdown">
-                  <li><a class="dropdown-item" href="./sports-consulting">Consulting</a></li>
-                  <li><a class="dropdown-item" href="./sports-investment">Investment</a></li>
-                  <li><a class="dropdown-item" href="./sports-events">Events</a></li>
-                  <li><a class="dropdown-item" href="./sports-marketing">Marketing</a></li>
-                  <li><a class="dropdown-item" href="./sports-technology-and-inovation">Technology</a></li>
-                  <li><a class="dropdown-item" href="./sports-infrastructure">Infrastructure</a></li>
-                  <li><a class="dropdown-item" href="./sports-performance-analysis">Performance Analysis</a></li>
-                  <li><a class="dropdown-item" href="./talent-development-and-training">Talent Development</a></li>
+                <li>
+                  <a class="dropdown-item" href="./sports-consulting"
+                    >Consulting</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./sports-investment"
+                    >Investment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./sports-events">Events</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./sports-marketing"
+                    >Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./sports-technology-and-inovation"
+                    >Technology</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./sports-infrastructure"
+                    >Infrastructure</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./sports-performance-analysis"
+                    >Performance Analysis</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./talent-development-and-training"
+                    >Talent Development</a
+                  >
+                </li>
               </ul>
-          </li>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./investors">Investors</a>
             </li>
@@ -91,218 +147,368 @@
       </nav>
     </div>
 
-  <!-- Main Content -->
-  <div class="content-wrapper">
-    <!-- Hero Section -->
-    <section id="hero" class="container-fluid py-5 content-section" data-aos="fade-up">
-      <!-- Video Background -->
-      <div class="video-background">
-        <video autoplay muted loop>
-          <source src="assets/video/sportball.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <!-- Overlay above video but below content -->
-        <div class="overlay"></div>
-      </div>
-    
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-6">
-            <h1 class="hero-title">Welcome to <span>Crossvia</span></h1>
-            <h2>Your Sports Business with our Cutting-Edge Solutions.</h2>
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="container-fluid py-5 content-section"
+        data-aos="fade-up"
+      >
+        <!-- Video Background -->
+        <div class="video-background">
+          <video autoplay muted loop>
+            <source src="assets/video/sportball.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- Overlay above video but below content -->
+          <div class="overlay"></div>
+        </div>
+
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="hero-title">Welcome to <span>Crossvia</span></h1>
+              <h2>Your Sports Business with our Cutting-Edge Solutions.</h2>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="about-us" class="container-fluid py-5 content-section"
-      style="background-image: url('assets/image/4.png');" data-aos="fade-up">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-4 about-us-box">
-            <p>
-              CROSSVIA is a dynamic provider of comprehensive sport services and solutions, dedicated to enhancing every
-              facet of the sports industry. Their range of services covers consulting, investment, events, marketing,
-              technology, infrastructure, performance analysis, and talent development.
-            </p>
-          </div>
-          <div class="col-6">
-            <!-- Floating Player Image -->
-            <img src="assets/image/golf-player.png" alt="Player Image" class="floating-player">
+      </section>
+      <section
+        id="about-us"
+        class="container-fluid py-5 content-section"
+        style="background-image: url('assets/image/4.png')"
+        data-aos="fade-up"
+      >
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4 about-us-box">
+              <p>
+                CROSSVIA is a dynamic provider of comprehensive sport services
+                and solutions, dedicated to enhancing every facet of the sports
+                industry. Their range of services covers consulting, investment,
+                events, marketing, technology, infrastructure, performance
+                analysis, and talent development.
+              </p>
+            </div>
+            <div class="col-6">
+              <!-- Floating Player Image -->
+              <img
+                src="assets/image/golf-player.png"
+                alt="Player Image"
+                class="floating-player"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <!-- break section -->
-    </section>
-    <section id="break-section" class="container-fluid py-5 content-section "
-    style="background-image: url('assets/image/break02.png');" data-aos="fade-up">
-   <div class="container py-5">
-    <!-- <h2 class="text-center mb-5">Services and Solutions</h2> -->
-    <div class="row">
-     
-      <div class="col-md-12">
-        <P><span>CROSSVIA</span>. Where Innovation Powers Performance.
-        </P>
-      </div>
+
+      <section
+        id="break-section"
+        class="container-fluid py-5 content-break-section"
+        style="background-image: url('assets/image/break02.png')"
+        data-aos="fade-up"
+      >
+        <div class="container py-5">
+          <!-- <h2 class="text-center mb-5">Services and Solutions</h2> -->
+          <div class="row">
+            <div class="col-md-4">
+              <p><span>CROSSVIA</span>. Where Innovation Powers Performance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- expertise section -->
+      <section
+        id="expertise"
+        class="container-fluid py-5 d-flex content-section"
+        style="background-image: url('assets/image/17.png')"
+        data-aos="fade-up"
+      >
+        <!-- Floating football -->
+        <img
+          src="assets/image/football.png"
+          alt="Floating Image"
+          class="floating-image"
+        />
+
+        <div class="container py-5">
+          <h2 class="text-center mb-5">Solutions</h2>
+          <p class="expertise-description">
+            CROSSVIA leverages industry expertise, a global network, and
+            tailored solutions to drive sustainable success, enhancing
+            efficiency, performance, and revenue in the sports industry.
+          </p>
+          <div class="row expertise-list gap-10 justify-content-center">
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list01.jpg')"
+            >
+              <a href="./sports-consulting">
+                <h3>SPORTS CONSULTING</h3>
+                <p>
+                  CROSSVIA offers comprehensive sports consulting services aimed
+                  at enhancing organizational performance and strategy within
+                  the sports industry. This includes strategic planning, market
+                  analysis, feasibility studies for sports projects, and
+                  advisory services tailored to the specific needs of sports
+                  organizations.
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list02.jpg')"
+            >
+              <a href="./sports-investment">
+                <h3>SPORTS INVESTMENT</h3>
+                <p>
+                  CROSSVIA provides expertise in sports investment, assisting
+                  clients in identifying and evaluating investment opportunities
+                  within the sports sector. This includes financial modeling,
+                  risk assessment, due diligence, and strategic investment
+                  advisory to maximize returns and mitigate risks.
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list03.jpg')"
+            >
+              <a href="./sports-events">
+                <h3>
+                  SPORTS<br />
+                  EVENTS
+                </h3>
+                <p>
+                  CROSSVIA specializes in organizing and managing sports events
+                  of various scales and types. From international tournaments to
+                  local community events, CROSSVIA handles event planning,
+                  logistics, marketing, and execution to ensure memorable and
+                  successful sports experiences.
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list04.jpg')"
+            >
+              <a href="./sports-marketing">
+                <h3>SPORTS MARKETING AND SPONSORSHIP</h3>
+                <p>
+                  CROSSVIA develops strategic sports marketing and sponsorship
+                  initiatives to enhance brand visibility and engagement. This
+                  includes sponsor acquisition, activation strategies, brand
+                  partnerships, and leveraging digital platforms to optimize
+                  sponsorship ROI and brand exposure.
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list05.jpg')"
+            >
+              <a href="./sports-technology-and-inovation">
+                <h3>TECHNOLOGY AND INNOVATION IN SPORTS</h3>
+                <p>
+                  CROSSVIA integrates cutting-edge technology and innovation
+                  into sports solutions. This includes sports tech solutions
+                  such as performance analytics, wearable technology, virtual
+                  reality applications for training, and innovative fan
+                  engagement platforms to enhance both player performance and
+                  fan experience.
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list06.jpg')"
+            >
+              <a href="./sports-infrastructure">
+                <h3>SPORTS INFRASTRUCTURE</h3>
+                <p>
+                  CROSSVIA provides expertise in designing, developing, and
+                  upgrading sports infrastructure. This includes stadium
+                  planning, facility management solutions, sustainable
+                  infrastructure development, and leveraging smart technologies
+                  to improve operational efficiency and user experience.
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list07.jpg')"
+            >
+              <a href="./sports-performance-analysis">
+                <h3>SPORTS PERFORMANCE ANALYSIS</h3>
+                <p>
+                  CROSSVIA offers advanced sports performance analysis services
+                  to optimize athlete and team performance. This includes
+                  data-driven insights, video analysis, physiological
+                  monitoring, and personalized training programs based on
+                  performance metrics to achieve peak athletic performance.
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 mb-4"
+              style="background-image: url('assets/image/expertise-list08.jpg')"
+            >
+              <a href="./talent-development-and-training">
+                <h3>TALENT DEVELOPMENT AND TRAINING</h3>
+                <p>
+                  CROSSVIA focuses on talent identification, development, and
+                  training programs aimed at nurturing future sports stars. This
+                  includes scouting services, youth development programs, coach
+                  education, sports psychology, and career management to support
+                  athletes throughout their careers.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- career section -->
+      <section
+        id="career"
+        class="container-fluid py-5 d-flex content-section"
+        style="background-image: url('assets/image/5.png')"
+        data-aos="fade-up"
+      >
+        <div class="container py-5">
+          <h2 class="text-center mb-5">Career at <span>CROSSVIA</span></h2>
+          <p class="career-description">
+            Empower Your Passion, Transform the Game!
+          </p>
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <p>
+                At CROSSVIA, we value talent, creativity, and innovation to
+                drive the future of sports. We seek passionate individuals ready
+                to make an impact with transformative solutions. Join a dynamic
+                environment where you can grow, thrive, and contribute to the
+                global sports community while advancing your skills. Explore our
+                opportunities and elevate your career with CROSSVIA.
+              </p>
+
+              <button
+                class="apply-button"
+                style="background-image: url('assets/image/apply.png')"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Additional sections... -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="assets/image/Crosslogo-black.png"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-3 quick-link">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="./about-us" class="">About Us</a></li>
+                <li><a href="./partners" class="">Partners</a></li>
+                <li><a href="./insights" class="">Insights</a></li>
+                <li><a href="./terms" class="">Terms</a></li>
+                <li><a href="./privacy" class="">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Solutions</h5>
+              <ul>
+                <li>
+                  <a href="./sports-consulting" class="">SPORTS CONSULTING</a>
+                </li>
+                <li>
+                  <a href="./sports-investment" class="">SPORTS INVESTMENT</a>
+                </li>
+                <li><a href="./sports-events" class="">SPORTS EVENTS</a></li>
+                <li>
+                  <a href="./sports-marketing" class=""
+                    >MARKETING AND SPONSORSHIP</a
+                  >
+                </li>
+                <li>
+                  <a href="./sports-technology-and-inovation" class=""
+                    >TECHNOLOGY AND INNOVATION</a
+                  >
+                </li>
+                <li>
+                  <a href="./sports-infrastructure" class=""
+                    >SPORTS INFRASTRUCTURE</a
+                  >
+                </li>
+                <li>
+                  <a href="./sports-performance-analysis" class=""
+                    >SPORTS PERFORMANCE ANALYSIS</a
+                  >
+                </li>
+                <li>
+                  <a href="./talent-development-and-training" class=""
+                    >TALENT DEVELOPMENT AND TRAINING</a
+                  >
+                </li>
+                <!-- More expertise links -->
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Contact Info<br /></h5>
+              <a href="mailto:info@crossvia.solutions"
+                >Email: info@crossvia.solutions</a
+              >
+              <div class="social-icon-footer">
+                <a
+                  href="#"
+                  class="social-icon-footer bi bi-linkedin"
+                  aria-label="LinkedIn"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon-footer bi bi-twitter"
+                  aria-label="Twitter"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon-footer bi bi-facebook"
+                  aria-label="Facebook"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon-footer bi bi-instagram"
+                  aria-label="Instagram"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <p>&copy; 2024 CROSSVIA. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
-   </div>
-    </section>
 
-    <!-- expertise section -->
-    <section id="expertise" class="container-fluid py-5 d-flex content-section"
-    style="background-image: url('assets/image/17.png');" data-aos="fade-up">
-     <!-- Floating football -->
-     <img src="assets/image/football.png" alt="Floating Image" class="floating-image">
-    
-    <div class="container py-5">
-        <h2 class="text-center mb-5">Solutions</h2>
-        <p class="expertise-description">CROSSVIA leverages industry expertise, a global network, and tailored solutions to drive sustainable success, enhancing efficiency, performance, and revenue in the sports industry.</p>
-        <div class="row expertise-list gap-10 justify-content-center">
-            <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list01.jpg');">
-                <a href="./sports-consulting">
-                    <h3>SPORTS CONSULTING</h3>
-                    <p>CROSSVIA offers comprehensive sports consulting services aimed at enhancing organizational performance and strategy within the sports industry. This includes strategic planning, market analysis, feasibility studies for sports projects, and advisory services tailored to the specific needs of sports organizations.
-                    </p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list02.jpg');">
-                <a href="./sports-investment">
-                    <h3>SPORTS INVESTMENT</h3>
-                    <p>CROSSVIA provides expertise in sports investment, assisting clients in identifying and evaluating investment opportunities within the sports sector. This includes financial modeling, risk assessment, due diligence, and strategic investment advisory to maximize returns and mitigate risks.
-                    </p>
-                </a>
-            </div>
-             <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list03.jpg');">
-                <a href="./sports-events">
-                    <h3>SPORTS<br> EVENTS</h3>
-                    <p >CROSSVIA specializes in organizing and managing sports events of various scales and types. From international tournaments to local community events, CROSSVIA handles event planning, logistics, marketing, and execution to ensure memorable and successful sports experiences.
-                    </p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list04.jpg');">
-                <a href="./sports-marketing">
-                    <h3>SPORTS MARKETING AND SPONSORSHIP</h3>
-                    <p>CROSSVIA develops strategic sports marketing and sponsorship initiatives to enhance brand visibility and engagement. This includes sponsor acquisition, activation strategies, brand partnerships, and leveraging digital platforms to optimize sponsorship ROI and brand exposure.
-                    </p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list05.jpg');">
-                <a href="./sports-technology-and-inovation">
-                    <h3>TECHNOLOGY AND INNOVATION IN SPORTS</h3>
-                    <p>CROSSVIA integrates cutting-edge technology and innovation into sports solutions. This includes sports tech solutions such as performance analytics, wearable technology, virtual reality applications for training, and innovative fan engagement platforms to enhance both player performance and fan experience.
-                    </p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list06.jpg');">
-                <a href="./sports-infrastructure">
-                    <h3>SPORTS INFRASTRUCTURE</h3>
-                    <p>CROSSVIA provides expertise in designing, developing, and upgrading sports infrastructure. This includes stadium planning, facility management solutions, sustainable infrastructure development, and leveraging smart technologies to improve operational efficiency and user experience.
-                    </p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list07.jpg');">
-                <a href="./sports-performance-analysis">
-                    <h3>SPORTS PERFORMANCE ANALYSIS</h3>
-                    <p>CROSSVIA offers advanced sports performance analysis services to optimize athlete and team performance. This includes data-driven insights, video analysis, physiological monitoring, and personalized training programs based on performance metrics to achieve peak athletic performance.
-                    </p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4" style="background-image: url('assets/image/expertise-list08.jpg');">
-                <a href="./talent-development-and-training">
-                    <h3>TALENT DEVELOPMENT AND TRAINING</h3>
-                    <p >CROSSVIA focuses on talent identification, development, and training programs aimed at nurturing future sports stars. This includes scouting services, youth development programs, coach education, sports psychology, and career management to support athletes throughout their careers.
-                    </p>
-                </a>
-            </div>
-           
-        </div>
+    <!-- Preloader -->
+    <div id="preloader">
+      <img src="assets/image/loading.gif" alt="Loading" class="preloader-gif" />
     </div>
-</section>
 
-
-
-<!-- career section -->
-<section id="career" class="container-fluid py-5 d-flex content-section"
-    style="background-image: url('assets/image/5.png');" data-aos="fade-up">
-    <div class="container py-5">
-        <h2 class="text-center mb-5">Career at <span>CROSSVIA</span> </h2>
-        <p class="career-description">Empower Your Passion, Transform the Game!</p>
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <P>At CROSSVIA, we value talent, creativity, and innovation to drive the future of sports. We seek passionate individuals ready to make an impact with transformative solutions. Join a dynamic environment where you can grow, thrive, and contribute to the global sports community while advancing your skills. Explore our opportunities and elevate your career with CROSSVIA.</P>
-
-              <button class="apply-button" style="background-image: url('assets/image/apply.png');">Apply</button>
-
-          </div> 
-        </div>
-    </div>
-</section>
-    <!-- Additional sections... -->
-
-
-     <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="assets/image/Crosslogo-black.png" alt="Logo" class="img-fluid">
-        </div>
-        <div class="col-md-3 quick-link">
-          <h5>Quick Links</h5>
-          <ul>
-            <li><a href="./about-us" class="">About Us</a></li>
-            <li><a href="./partners" class="">Partners</a></li>
-            <li><a href="./insights" class="">Insights</a></li>
-            <li><a href="./terms" class="">Terms</a></li>
-            <li><a href="./privacy" class="">Privacy</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>Solutions</h5>
-          <ul>
-            <li><a href="./sports-consulting" class="">SPORTS CONSULTING</a></li>
-            <li><a href="./sports-investment" class="">SPORTS INVESTMENT</a></li>
-            <li><a href="./sports-events" class="">SPORTS EVENTS</a></li>
-            <li><a href="./sports-marketing" class="">MARKETING AND SPONSORSHIP</a></li>
-            <li><a href="./sports-technology-and-inovation" class="">TECHNOLOGY AND INNOVATION</a></li>
-            <li><a href="./sports-infrastructure" class="">SPORTS INFRASTRUCTURE</a></li>
-            <li><a href="./sports-performance-analysis" class="">SPORTS PERFORMANCE ANALYSIS</a></li>
-            <li><a href="./talent-development-and-training" class="">TALENT DEVELOPMENT AND TRAINING</a></li>
-            <!-- More expertise links -->
-          </ul>
-        </div>
-        <div class="col-md-3">
-        
-          <h5>Contact Info<br></h5>
-          <a href="mailto:info@crossvia.solutions">Email: info@crossvia.solutions</a>
-        <div class="social-icon-footer">
-          
-          <a href="#" class="social-icon-footer bi bi-linkedin " aria-label="LinkedIn"></a>
-          <a href="#" class="social-icon-footer bi bi-twitter " aria-label="Twitter"></a>
-          <a href="#" class="social-icon-footer bi bi-facebook " aria-label="Facebook"></a>
-          <a href="#" class="social-icon-footer bi bi-instagram " aria-label="Instagram"></a>
-        </div>
-        
-
-        </div>
-      </div>
-      <p>&copy; 2024 CROSSVIA. All rights reserved.</p>
-    </div>
-  </footer>
-
-  </div>
-
-  <!-- Preloader -->
-<div id="preloader">
-  <img src="assets/image/loading.gif" alt="Loading" class="preloader-gif">
-</div>
- 
-  <!-- Bootstrap and AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script> <!-- Link to your external JS file -->
-
-</body>
-
+    <!-- Bootstrap and AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Link to your external JS file -->
+  </body>
 </html>
