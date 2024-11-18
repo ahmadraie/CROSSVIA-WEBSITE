@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INSIGHTS | Crossvia</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Swiper.js CSS -->
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
@@ -26,6 +26,54 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
     <!-- Link to your external CSS file -->
   </head>
+
+  <style>
+    #news-carousel .swiper {
+      width: 100%;
+      height: auto;
+    }
+    #news-carousel .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #news-carousel .card {
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    #news-carousel .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    #news-carousel  h2 {
+      font-size: 4rem;
+      color: #f1f1f1;
+    }
+    #news-carousel .btn-primary {
+background-color: #32879f;
+border: none;
+border-radius: 20px;
+padding: 10px 20px;
+color: #fff;
+transition: all 0.3s ease;
+}
+#news-carousel .btn-primary:hover {
+background-color: #fff;
+transform: scale(1.1);
+color: #32879f;
+}
+#news-carousel .swiper-button-next,
+#news-carousel .swiper-button-prev {
+    color: #fff;
+  }
+
+  #news-carousel .swiper-pagination-bullet {
+    background-color: #32879f;
+    opacity: 0.7;
+  }
+  </style>
 
   <body
     data-bs-spy="scroll"
@@ -117,6 +165,84 @@
       
       
         </section>
+
+        <!-- latest news -->
+      <section
+      id="news-carousel"
+      class="container-fluid py-5 d-flex content-section"
+      style="background-image: url('assets/image/18.png')"
+      data-aos="fade-up"
+    >
+      <div class="container py-5 ">
+        <h2 class="text-center mb-5">Latest News</h2>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide card">
+              <img src="assets/image/news06.png" class="card-img-top" alt="News 1">
+              <div class="card-body">
+                <h5 class="card-title">Saudi 2034 plans include stadium 350m above ground.</h5>
+                <p class="card-text">Saudi Arabia has submitted plans to build 11 stadiums with high technology and innovation as part of the country’s bid to host the 2034 world cup.</p>
+               
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <!-- Repeat for other cards -->
+            <div class="swiper-slide card">
+              <img src="assets/image/news02.png" class="card-img-top" alt="News 2">
+              <div class="card-body">
+                <h5 class="card-title">A new E-sports tournament in Saudi Arabia promises to be a game-changer – but it’s also caused division in the industry.</h5>
+                <p class="card-text">Saudi Arabia hosts the first-ever E-sports World Cup in 2024, aiming to make the country a global hub for gaming and digital entertainment.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+               <!-- Repeat for other cards -->
+               <div class="swiper-slide card">
+                <img src="assets/image/news03.png" class="card-img-top" alt="News 2">
+                <div class="card-body">
+                  <h5 class="card-title">AI and tech innovations at Paris 2024: A game changer in sports.</h5>
+                  <p class="card-text">How AI and technological innovations will enhance the Paris 2024 Olympics, transforming the athlete experience, event organization, and fan engagement.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+                 <!-- Repeat for other cards -->
+            <div class="swiper-slide card">
+              <img src="assets/image/news04.png" class="card-img-top" alt="News 2">
+              <div class="card-body">
+                <h5 class="card-title">Tech innovations, AI changing the game for modern sports, training methodologies.</h5>
+                <p class="card-text">how AI and tech innovations are transforming sports training by enhancing performance analysis, injury prevention, and personalized coaching.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+               <!-- Repeat for other cards -->
+               <div class="swiper-slide card">
+                <img src="assets/image/news05.png" class="card-img-top" alt="News 2">
+                <div class="card-body">
+                  <h5 class="card-title">From Wimbledon to VAR, is tech hurting the drama of sport?</h5>
+                  <p class="card-text">Advancements in technology may be diminishing the emotional and dramatic appeal of sports by focusing on accuracy rather than the spontaneous unpredictability that fuels their excitement. </p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+                 <!-- Repeat for other cards -->
+            <div class="swiper-slide card">
+              <img src="assets/image/news01.png" class="card-img-top" alt="News 2">
+              <div class="card-body">
+                <h5 class="card-title">Saudi Arabia to develop $3.3bn sports complex with UK tech partnership</h5>
+                <p class="card-text">The $3.3bn sports complex will be a major tech-driven hub in the MENA region, attracting investment in sports and entertainment.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <!-- Add more cards as needed -->
+          </div>
+          <!-- Pagination and navigation -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
         <!-- Additional sections... -->
 
       <!-- Footer -->
@@ -178,10 +304,49 @@
 <div id="preloader">
   <img src="assets/image/loading.gif" alt="Loading" class="preloader-gif">
 </div>
-    <!-- Bootstrap and AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper.js JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Link to your external JS file -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+            loop: true, // Enable infinite loop
+            autoplay: {
+              delay: 3000, // 3 seconds
+              disableOnInteraction: false, // Continue autoplay even after user interaction
+             },
+            
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            768: { slidesPerView: 1 },
+            992: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+          },
+        });
+      });
+      </script>
   </body>
 </html>
