@@ -158,6 +158,7 @@ break section
 #break-section h3 {
   font-size: 3rem;
   color: #32879f;
+  
 }
 
 .content-break-video-section .col-md-6 p{
@@ -180,7 +181,7 @@ text-align: left;
   color: #fff;
   justify-content: center;
   text-align: left;
-  /* text-shadow: 3px 10px 14px #151515; */
+  text-shadow: 3px 10px 14px #151515;
 }
 #break-section .col-md-4 {
   margin-top: 0;
@@ -664,7 +665,8 @@ margin-top: 420px;
 }
 .page-title {
 
-position: relative;  line-height: 1.8;
+position: relative; 
+ line-height: 1.8;
 top: 40vh;
 }
 .page-title h1 {
@@ -680,12 +682,15 @@ top: 40vh;
 .page-title p {
   font-size: 2rem;
   /* position: relative; */
-  text-align: left;
+  text-align: justify;
   justify-content: center;
   color: #fff;
 margin-top: 50px;
   padding-left: 50px;
+  /* padding-right: 200px; */
+  line-height: 1.2;
   /* top: 25vh; */
+  max-width: 100vh;
 }
 
 @media (max-width: 768px) {
