@@ -101,8 +101,8 @@ h2 {
   color: #ffffff8c;
   /* border-bottom: #fff solid 2px; */
   background-color: #32879f;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -503,7 +503,7 @@ text-align: left;
   font-size: 2rem;
   /* margin-bottom: 10px; */
   margin-top: 150px;
-  text-shadow: 3px 10px 14px #151515;
+  /* text-shadow: 3px 10px 14px #151515; */
 }
 
 .expertise-list .col-md-3:hover h3 {
@@ -511,6 +511,7 @@ text-align: left;
   text-shadow: none;
   transition: text-shadow 0.3 ease;
   margin-top: 0;
+  border-bottom: 2px solid #32879f;
 }
 
 .expertise-list .col-md-3 p {
