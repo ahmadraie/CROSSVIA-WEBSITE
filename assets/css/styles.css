@@ -26,13 +26,20 @@ h2 {
   padding: 20px;
   transition: left 0.3s ease;
   z-index: 999;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
+}
+
+.sidebar .nav-item {
+  border-bottom: #fff solid 2px;
+  font-size: 1.2rem;
 }
 
 .sidebar .navbar-nav {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .sidebar img {
@@ -66,7 +73,7 @@ h2 {
   display: block;
   opacity: 1;
   visibility: visible;
-  text-align: center;
+  text-align: Left;
  
 }
 @media (min-width: 992px) {
@@ -81,13 +88,18 @@ h2 {
   display: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
   color: #a6a6a6;
   border: none;
+}
+.dropdown-toggle::after {
+  content: none;
 }
 
 .dropdown-item {
   color: #ffffff8c;
+  /* border-bottom: #fff solid 2px; */
+  
 }
 
 .dropdown-menu .dropdown-item:hover {
