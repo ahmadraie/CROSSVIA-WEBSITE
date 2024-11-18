@@ -661,16 +661,30 @@ margin-top: 420px;
   position: relative;
   overflow: hidden; /* Hide overflow from video and overlay */
 }
+.page-title {
 
+position: relative;  line-height: 1.8;
+top: 40vh;
+}
 .page-title h1 {
   font-size: 5rem;
-  position: relative;
+  
   text-align: left;
   justify-content: center;
   color: #fff;
-
   padding-left: 50px;
-  top: 25vh;
+
+  
+}
+.page-title p {
+  font-size: 2rem;
+  /* position: relative; */
+  text-align: left;
+  justify-content: center;
+  color: #fff;
+margin-top: 50px;
+  padding-left: 50px;
+  /* top: 25vh; */
 }
 
 @media (max-width: 768px) {
