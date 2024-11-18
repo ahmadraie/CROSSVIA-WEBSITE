@@ -66,6 +66,14 @@ h2 {
   display: block;
   opacity: 1;
   visibility: visible;
+  text-align: center;
+ 
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+      position: static;
+      background-color: #32879f;
+  }
 }
 
 /* Adjust the transition for smooth hover effect */
@@ -74,10 +82,17 @@ h2 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+  color: #a6a6a6;
+  border: none;
+}
+
+.dropdown-item {
+  color: #ffffff8c;
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #e9ecef; /* Optional hover color for items */
+  background-color: #32879f; /* Optional hover color for items */
+  color: #fff;
 }
 
 .content-wrapper {
