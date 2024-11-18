@@ -30,7 +30,7 @@
     <style>
       #news-carousel .swiper {
         width: 100%;
-        height: auto;
+        height: 65vh;
       }
       #news-carousel .swiper-slide {
         display: flex;
@@ -39,6 +39,7 @@
       }
       #news-carousel .card {
         width: 300px;
+        height: 500px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         overflow: hidden;
@@ -69,9 +70,30 @@
       color: #fff;
     }
 
+    #news-carousel .swiper-button-next:after{
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        top: 25vh;
+       
+      }
+      #news-carousel .swiper-button-prev:after {
+        position: absolute;
+        top: 25vh;
+        color: #fff;
+        font-weight: bold;
+
+      }
     #news-carousel .swiper-pagination-bullet {
       background-color: #32879f;
       opacity: 0.7;
+      
+    }
+    #news-carousel .swiper-pagination-bullet-active {
+      background-color: #32879f;
+      opacity: 1;
+      height: 10px;
+      width: 10px;
     }
 
  /* Swiper Container Styling */
@@ -163,67 +185,7 @@
       opacity: 1;
     }
 
-    /* marketing section */
 
- /* Ensure section takes full viewport height */
-#marketing-section {
-  padding: 0; /* Remove any padding */
-  margin: 0;
-  height: 80vh;
-}
-
-#marketing-section .row>*  {
-  padding-left: 0;
-  padding-right: 0;
-
-}
-
-/* Style the columns */
-#marketing-section .column-container {
-  position: relative;
-  height: 100%; /* Make the columns stretch full height */
-  overflow: hidden; /* Prevent overflow issues */
-}
-
-/* Wrapper for content inside each column */
-#marketing-section .content-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-  margin: 0;
-
-}
-
-/* Background for each column */
-#marketing-section .background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  transition: background-image 0.5s ease-in-out;
-}
-
-/* Text inside each column */
-#marketing-section p {
-  position: relative;
-  z-index: 2;
-  font-size: 2rem;
-  font-weight: bold;
-  /* background-color: rgba(0, 0, 0, 0.6); */
-  color: white;
-  padding: 25px;
-  border-radius: 8px;
-  text-align: center;
-  text-shadow: 3px 10px 14px #151515;
-}
 
       </style>
   </head>
@@ -470,7 +432,7 @@
                 <p>
                   CROSSVIA provides expertise in sports investment, assisting
                   clients in identifying and evaluating investment opportunities
-                  within the sports sector. This includes financial modeling,
+                  within the sports industry. This includes financial modeling,
                   risk assessment, due diligence, and strategic investment
                   advisory to maximize returns and mitigate risks.
                 </p>
@@ -574,33 +536,7 @@
         </div>
       </section>
 
-      <section
-      id="marketing-section"
-      class="container-fluid d-flex align-items-stretch"
       
-      data-aos="fade-up"
-    >
-      <div class="row  m-0">
-        <div class="col-4 d-flex  column-container">
-          <div class="content-wrapper">
-            <div class="background" style="background-image: url('assets/image/Col/col-1-1.png');" id="column-1"></div>
-            <p id="text-1">Adopting Interactive Campaigns to Improve Fan Engagement</p>
-          </div>
-        </div>
-        <div class="col-4 d-flex  column-container">
-          <div class="content-wrapper">
-            <div class="background" style="background-image: url('assets/image/Col/col-2-1.png');" id="column-2"></div>
-            <p id="text-2">Developing Resilient Young Talents Through Efficient Training</p>
-          </div>
-        </div>
-        <div class="col-4 d-flex  column-container">
-          <div class="content-wrapper">
-            <div class="background" style="background-image: url('assets/image/Col/col-3-1.png');" id="column-3"></div>
-            <p id="text-3">Enhancing Camel Racing Experiences</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 
@@ -755,14 +691,14 @@ data-aos="fade-up"
       <!-- Slide 1 -->
       <div class="swiper-slide" style="background-image: url('assets/image/slide1.png')">
         <div class="container">
-          <h2>Harnessing Opportunities in Today's Sports Sector.</h2>
-          <p>Allocating resources to high-potential opportunities in the sports sector by capitalizing on market dynamics to maximize investment returns.</p>
+          <h2>Harnessing Opportunities in Today's Sports Industry.</h2>
+          <p>Allocating resources to high-potential opportunities in the sports industry by capitalizing on market dynamics to maximize investment returns.</p>
         </div>
       </div>
       <!-- Slide 2 -->
       <div class="swiper-slide" style="background-image: url('assets/image/slide2.png')">
         <div class="container">
-          <h2>Make Smart Investment Decisions in the Sports Sector to Maximize the Return on Investment.</h2>
+          <h2>Make Smart Investment Decisions in the Sports Industry to Maximize the Return on Investment.</h2>
           <p>Harnessing unique investment opportunities with high-growth potential that drive long-term success and industry leadership.</p>
         </div>
       </div>
@@ -972,44 +908,7 @@ data-aos="fade-up"
       });
       </script>
 
-      <script>
-const data = [
-  {
-    images: ["assets/image/Col/col-1-2.png", "assets/image/Col/col-1-3.png","assets/image/Col/col-1-1.png"],
-    texts: ["Elevating the E-Sports Experience", "Implementing Sports Science in Educational Programs","Adopting Interactive Campaigns to Improve Fan Engagement"],
-    columnId: "column-1",
-    textId: "text-1",
-  },
-  {
-    images: ["assets/image/Col/col-2-2.png","assets/image/Col/col-2-3.png", "assets/image/Col/col-2-1.png"],
-    texts: ["Embedding Technology in Training Plans", "Integrating Sustainability Principles in Designs and Construction Plans","Developing Resilient Young Talents Through Efficient Training"],
-    columnId: "column-2",
-    textId: "text-2",
-  },
-  {
-    images: ["assets/image/Col/col-3-2.png","assets/image/Col/col-3-3.png", "assets/image/Col/col-3-1.png"], 
-    texts: ["Driving Excellence and Efficiency in Horse Racing", "Driving Innovation in Race Car Solutions","Enhancing Camel Racing Experiences"],
-    columnId: "column-3",
-    textId: "text-3",
-  },
-];
-
-function updateContent() {
-  data.forEach((item) => {
-    const column = document.getElementById(item.columnId);
-    const text = document.getElementById(item.textId);
-    let index = 0;
-
-    setInterval(() => {
-      column.style.backgroundImage = `url(${item.images[index]})`;
-      text.innerText = item.texts[index];
-      index = (index + 1) % item.images.length;
-    }, 5000); // Change every 5 seconds
-  });
-}
-
-updateContent();
-      </script>
+     
 
 <script>
   // Array of messages to display
@@ -1017,8 +916,8 @@ updateContent();
     "Transform Your Sports Business with our Cutting-Edge Solutions.",
     "Elevating the Game, Transforming the Industry.",
     "Turning Ambitions into Achievements.",
-    "Driving Excellence Across Every Arena.",
-    "⁠Elevating the Game, Transforming the Industry."
+    "Driving Excellence Across Every Sports Arena.",
+    "⁠Elevating the Game, Transforming the Sports Industry."
   ];
 
   // Target the h2 element

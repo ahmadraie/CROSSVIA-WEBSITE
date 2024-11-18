@@ -91,6 +91,7 @@ h2 {
   transition: opacity 0.3s ease-in-out;
   color: #a6a6a6;
   border: none;
+  background-color: #32879f;
 }
 .dropdown-toggle::after {
   content: none;
@@ -99,7 +100,9 @@ h2 {
 .dropdown-item {
   color: #ffffff8c;
   /* border-bottom: #fff solid 2px; */
-  
+  background-color: #32879f;
+  align-items: center;
+  text-align: center;
 }
 
 .dropdown-menu .dropdown-item:hover {
