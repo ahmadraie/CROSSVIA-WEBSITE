@@ -150,7 +150,7 @@ text-align: left;
   color: #fff;
   justify-content: center;
   text-align: left;
-  text-shadow: 3px 10px 14px #151515;
+  /* text-shadow: 3px 10px 14px #151515; */
 }
 #break-section .col-md-4 {
   margin-top: 0;

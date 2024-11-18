@@ -73,6 +73,205 @@ color: #32879f;
     background-color: #32879f;
     opacity: 0.7;
   }
+
+  #Article {
+  background-image: url('assets/image/17.png');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+}
+
+#Article .content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Article h2 {
+      font-size: 4rem;
+      color: #f1f1f1;
+    }
+.card {
+  border: none; /* Removes the default card border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Enlarges the card slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+}
+
+.card-img-top {
+  height: 180px; /* Ensures consistent height for images */
+  object-fit: cover; /* Crops the image to fill the area */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-top: 0.5rem;
+}
+a.text-decoration-none {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits text color for seamless styling */
+}
+
+a.text-decoration-none:hover {
+  text-decoration: none; /* Ensures no text underline on hover */
+}
+
+#Article .col-md-6 {
+  margin-bottom: 1.5rem; /* Adds spacing between cards */
+}
+
+#Article .clickable-card {
+  cursor: pointer;
+}
+#Article .main-article .card {
+  border-radius: 8px;
+  overflow: hidden;
+ 
+}
+#Article .main-article {
+
+  margin-top: 150px;
+}
+
+#Article .main-article .card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+#Article .main-article .card-text {
+  font-size: 1rem;
+  color: #666666;
+  margin-top: 1rem;
+}
+
+#Article .main-article .card-img-top {
+  height: 300px;
+
+}
+
+#Article .main-article .btn {
+  background-color: #32879f;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#Article .main-article .btn:hover {
+  background-color: #fff;
+  color: #333333;
+  border: #32879f solid 2px;
+}
+#Article .row {
+  margin: 0; /* Prevents unintended horizontal scrolling */
+}
+
+#Article .col-lg-6 {
+  padding: 1rem; /* Adds spacing around the columns */
+}
+
+/* Swiper Container Styling */
+.investment-swiper-container {
+      width: 100%;
+      height: 60vh; /* Full screen height */
+      position: relative;
+    }
+
+    #investment-slider .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      height: 100%; /* Ensure full height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+     /* Overlay Styling */
+     #investment-slider .swiper-slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+      z-index: 1;
+    }
+
+    /* Text Styling */
+    #investment-slider .container h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      text-align: justify;
+    }
+
+    #investment-slider .container p {
+      font-size: 1.25rem;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      padding: 0 15px;
+      text-align: justify;
+
+    }
+    #investment-slider .container  {
+    position: relative; /* To position content above overlay */
+    z-index: 2;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #investment-slider  .container h2 {
+        font-size: 2rem;
+      }
+
+      #investment-slider  .container p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #investment-slider .container h2 {
+        font-size: 1.5rem;
+      }
+
+      #investment-slider .container p {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Navigation and Pagination Styling */
+    #investment-slider .swiper-button-next,
+    #investment-slider .swiper-button-prev {
+      color: #fff;
+    }
+
+    #investment-slider .swiper-pagination-bullet {
+      background-color: #32879f;
+      opacity: 0.7;
+    }
+
+    #investment-slider .swiper-pagination-bullet-active {
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+    }
   </style>
 
   <body
@@ -165,6 +364,121 @@ color: #32879f;
       </div>
       
         </section>
+
+        <!-- Featured Article Section -->
+<section
+id="Article"
+class="container-fluid py-5 d-flex content-section"
+style="background-image: url('assets/image/17.png'); background-size: cover; background-position: center;"
+data-aos="fade-up"
+>
+<div class="container py-5">
+  <h2 class="text-center mb-5">Featured Articles</h2>
+  <div class="row">
+    <!-- Left Column: Article Cards -->
+    <div class="col-lg-6">
+      <div class="row">
+        <!-- Article Card 1 -->
+        <div class="col-md-6 mb-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="assets/image/article01.png" class="card-img-top" alt="Article 1">
+              <div class="card-body">
+                <h5 class="card-title">How Major Sporting Events are Boosting Middle East Economies.</h5>
+                <p class="card-text">The Middle East is rapidly emerging as a global sports hub, with increasing investments in infrastructure, events, and talent, positioning the region as a key player in the international sports landscape.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Article Card 2 -->
+        <div class="col-md-6 mb-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="assets/image/article02.png" class="card-img-top" alt="Article 2">
+              <div class="card-body">
+                <h5 class="card-title">Navigating the Future of Technology in Sports: Evolving Technologies and Business Use Cases.</h5>
+                <p class="card-text">Key sports trends which include the integration of AI, data analytics, and wearable tech, the rise of e-sports and virtual sports, and a growing focus on sustainability and fan personalization.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Article Card 3 -->
+        <div class="col-md-6 mb-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="assets/image/article03.png" class="card-img-top" alt="Article 3">
+              <div class="card-body">
+                <h5 class="card-title">The Importance of Sports Management Consulting.</h5>
+                <p class="card-text">The critical role of sports management consulting in enhancing organizational efficiency, strategic decision-making, and overall performance in the sports industry.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Article Card 4 -->
+        <div class="col-md-6 mb-4">
+          <a href="article4.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="assets/image/article04.png" class="card-img-top" alt="Article 4">
+              <div class="card-body">
+                <h5 class="card-title">Innovative Architectural Designs Shaping the Future of Sports Facilities.</h5>
+                <p class="card-text">Innovative architectural designs in sports facilities, focusing on sustainability, fan experience, and the integration of advanced technologies to enhance functionality and aesthetics.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Main Article -->
+    <div class="col-lg-6 main-article">
+      <div class="card ">
+        <img src="assets/image/article05.png" class="card-img-top" alt="Main Article">
+        <div class="card-body">
+          <h2 class="card-title">Saudi Arabia’s Sporting Rise: Vision 2030 and the Quest for Global Recognition.</h2>
+          <p class="card-text">
+            Saudi Arabia's ambitious efforts to transform and grow its sports sector, leveraging major investments and global partnerships to enhance its international profile and diversify its economy.
+          </p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+   <!-- Investment Slider Section -->
+   <section id="investment-slider">
+    <div class="investment-swiper-container swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image: url('assets/image/slide1-ins.png')">
+          <div class="container">
+            <h2>Empowering the Future of Sports Through Innovation and Insight.</h2>
+            <!-- <p>Allocating resources to high-potential opportunities in the sports sector by capitalizing on market dynamics to maximize investment returns.</p> -->
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide" style="background-image: url('assets/image/slide2-ins.png')">
+          <div class="container">
+            <h2>Unlock Industry Trends and Innovations Shaping the Future of Sports.</h2>
+            <!-- <p>Harnessing unique investment opportunities with high-growth potential that drive long-term success and industry leadership.</p> -->
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide" style="background-image: url('assets/image/slide3-ins.png')">
+          <div class="container">
+            <h2>Stay Ahead with Exclusive Insights into the Evolving Sports Landscape.</h2>
+            <!-- <p>Revolutionize the sports industry by embracing technology investments that drive innovation and growth.</p> -->
+          </div>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+  
+      <!-- Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+  
+    </div>
+  </section>
 
         <!-- latest news -->
       <section
@@ -347,6 +661,24 @@ color: #32879f;
           },
         });
       });
+      </script>
+       <script>
+        var investmentSwiper = new Swiper('.investment-swiper-container', {
+          loop: true,
+          autoplay: {
+            delay: 5000, // Change slide every 5 seconds
+            disableOnInteraction: false, // Keeps autoplay running even after interaction
+          },
+          effect: 'fade', // Smooth fade effect
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Allow clicks on pagination bullets
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
       </script>
   </body>
 </html>
