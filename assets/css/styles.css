@@ -1129,6 +1129,14 @@ Sport Consulting page
   padding-left: 42px;
   font-weight: 200;
 }
+#sports-item .padding-1 {
+  font-size: 1.2rem;
+  color: #333;
+  justify-content: center;
+  text-align: justify;
+  padding-left: 48px;
+  font-weight: 200;
+}
 
 #terms-page h2 {
   font-size: 4rem;
