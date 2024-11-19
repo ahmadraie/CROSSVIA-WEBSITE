@@ -155,16 +155,29 @@ break section
   background-position: center;
 
 }
+
+
 #break-section h3 {
   font-size: 3rem;
-  color: #32879f;
+  color: #fff;
   
 }
 
+/* General styling for the unit */
+.unit {
+  font-size: 1.2rem; /* Make the unit smaller than the number */
+  color: #32879f;       /* Lighter color for the unit */
+  margin-left: 4px;  /* Add a small gap between the number and the unit */
+}
+
+/* Specific styling when used inside animated-statistic */
+.animated-statistic .unit {
+  font-style: italic; /* Example: Italicize the unit */
+}
 .content-break-video-section .col-md-6 p{
 
   font-size: 1.5rem;
-  color: #fff;
+  color: #32879f;
   justify-content: left;
   text-align: left;
   text-shadow: 3px 10px 14px #151515;
@@ -562,6 +575,42 @@ text-align: left;
   width: 100px;
   animation: float-alt 6s ease-in-out infinite;
   z-index: 1;
+}
+
+/* Number section */
+
+.content-num-video-section {
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.content-num-video-section .col-md-6 h2{
+
+  
+    font-weight: bold;
+    font-size: 3rem;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 3px 10px 14px #151515;
+  
+
+}
+
+.content-num-video-section .col-md-6 h3{
+  font-size: 3rem;
+  color: #3a8f98;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-num-video-section .col-md-6 p{
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 #partners h2 {

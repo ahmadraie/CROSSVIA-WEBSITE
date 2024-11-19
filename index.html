@@ -540,6 +540,58 @@
         </div>
       </section>
 
+
+      <section
+  id="numbers-video-section" 
+  class="container-fluid py-5 content-num-video-section" 
+  style="background-image: url('')"
+  data-aos="fade-up"
+>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="assets/video/video01.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- Overlay above video but below content -->
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container py-5 ">
+    <div class="row align-items-center">
+      <!-- Title Column -->
+      <div class="col-md-6">
+        <h2 class="text-uppercase">
+          Key Statistics of the Global Sports Industry
+        </h2>
+      </div>
+
+      <!-- Statistics Column -->
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-6 mb-4 ">
+            <h3 class="animated-statistic" data-target="143"><span class="number">0</span> <span class="unit">bn USD</span></h3>
+            <p>Revenue of global sports equipment market </p>
+          </div>
+          <div class="col-6 mb-4 ">
+            <h3 class="animated-statistic" data-target="2.4"><span class="number">0</span> <span class="unit">bn USD</span></h3>
+            <p>E-Sport market size worldwide </p>
+          </div>
+          <div class="col-6 mb-4 ">
+            <h3 class="animated-statistic" data-target="1.8"><span class="number">0</span> <span class="unit">bn USD</span></h3>
+            <p>Highest brand value in soccer </p>
+          </div>
+          <div class="col-6 mb-4 ">
+            <h3 class="animated-statistic" data-target="97.35"><span class="number">0</span> <span class="unit">bn USD</span></h3>
+            <p>Size of sports sponsorship market </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       
 
 
@@ -940,6 +992,55 @@ data-aos="fade-up"
 
   // Change text every 4.5 seconds
   setInterval(changeText, 4500);
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const stats = document.querySelectorAll(".animated-statistic");
+  let animated = false;
+
+  const animateNumbers = () => {
+    stats.forEach((stat) => {
+      const numberElement = stat.querySelector(".number");
+      const unitElement = stat.querySelector(".unit");
+
+      const updateCount = () => {
+        const target = +stat.getAttribute("data-target");
+        const count = +numberElement.innerText;
+
+        const increment = target / 200; // Adjust the speed of animation
+
+        if (count < target) {
+          numberElement.innerText = Math.min(count + increment, target).toFixed(2);
+          unitElement.innerText = " bn USD";
+          setTimeout(updateCount, 20);
+        } else {
+          numberElement.innerText = target.toLocaleString();
+          unitElement.innerText = " bn USD";
+        }
+      };
+
+      updateCount();
+    });
+  };
+
+  // Using Intersection Observer to trigger animation
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !animated) {
+          animateNumbers();
+          animated = true; // Ensure the animation runs only once
+        }
+      });
+    },
+    { threshold: 0.3 } // Trigger when 30% of the section is visible
+  );
+
+  // Observe the section containing the stats
+  const section = document.getElementById("numbers-video-section");
+  observer.observe(section);
+});
 </script>
 
 
