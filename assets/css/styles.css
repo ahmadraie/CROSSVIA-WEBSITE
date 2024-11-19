@@ -463,6 +463,48 @@ text-align: left;
   }
 }
 
+.custom-quarter-circle-white {
+  overflow: hidden;
+}
+
+.custom-quarter-circle-white::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-color: #fff; /* Color of the quarter-circle */
+  border-bottom-right-radius: 100px; /* Make it a quarter-circle */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.custom-quarter-circle-white:hover::before {
+  opacity: 0; /* Make the circle invisible */
+  visibility: hidden; /* Remove it from view */
+}
+.custom-quarter-circle-blue {
+  overflow: hidden;
+}
+
+.custom-quarter-circle-blue:hover::before {
+  opacity: 0; /* Make the circle invisible */
+  visibility: hidden; /* Remove it from view */
+}
+
+
+
+.custom-quarter-circle-blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-color: #32879f; /* Color of the quarter-circle */
+  border-bottom-right-radius: 100px; /* Make it a quarter-circle */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
 #expertise {
   text-align: center;
 }
@@ -534,6 +576,8 @@ text-align: left;
   font-size: 1rem;
   margin: 0;
   text-align: justify;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+
 }
 
 .expertise-list .col-md-3:hover p {
