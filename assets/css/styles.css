@@ -470,12 +470,12 @@ text-align: left;
 .custom-quarter-circle-white::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
+  top: 20px;
+  left: 20px;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
   background-color: #fff; /* Color of the quarter-circle */
-  border-bottom-right-radius: 100px; /* Make it a quarter-circle */
+  border-radius: 50px; /* Make it a quarter-circle */
   transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
 }
 
@@ -497,12 +497,12 @@ text-align: left;
 .custom-quarter-circle-blue::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
+  top: 20px;
+  left: 20px;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
   background-color: #32879f; /* Color of the quarter-circle */
-  border-bottom-right-radius: 100px; /* Make it a quarter-circle */
+  border-radius: 50px; /* Make it a quarter-circle */
   transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
 }
 #expertise {
