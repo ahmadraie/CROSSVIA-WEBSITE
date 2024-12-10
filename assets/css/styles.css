@@ -201,6 +201,13 @@ text-align: left;
 
 }
 
+@media (max-width768) {
+  .logo {
+  width: 300px;
+}
+}
+
+
 #break-video-section .col-md-6 {
   margin-top: 0;
 
@@ -259,6 +266,14 @@ text-align: left;
   margin-top: 50%;
   color: #fff;
   z-index: 2; /* Ensures text stays on top of overlay */
+}
+
+@media (max-width:430px) {
+  #hero .hero-title {
+
+    font-size: 3rem;
+  }
+  
 }
 
 #hero h2 {
