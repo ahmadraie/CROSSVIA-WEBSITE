@@ -51,7 +51,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto; /* Push social icons to the bottom */
+  margin-top: 50px; /* Push social icons to the bottom */
 }
 
 .social-icon {
