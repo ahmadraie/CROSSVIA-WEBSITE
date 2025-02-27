@@ -160,9 +160,13 @@ break section
 font-size: 24px;
   color: #fff;
   background-color: #32879f;
- 
+ }
 
-}
+ .breakContent a:hover {
+  font-size: 24px;
+    color: #32879f;
+    background-color: #fff;
+   }
 
 .breakContent p {
    text-align: justify;
