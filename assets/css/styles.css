@@ -160,7 +160,12 @@ break section
 font-size: 24px;
   color: #fff;
   background-color: #32879f;
+ 
 
+}
+
+.breakContent p {
+   text-align: justify;
 }
 
 
@@ -186,7 +191,7 @@ font-size: 24px;
   font-size: 1.5rem;
   color: #fff;
   justify-content: left;
-  text-align: left;
+  text-align: justify;
   text-shadow: 3px 10px 14px #151515;
 }
 .content-break-video-section h2 {
