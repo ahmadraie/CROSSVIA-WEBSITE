@@ -156,6 +156,13 @@ break section
 
 }
 
+.breakContent a {
+font-size: 24px;
+  color: #fff;
+  background-color: #32879f;
+
+}
+
 
 #break-section h3 {
   font-size: 3rem;
